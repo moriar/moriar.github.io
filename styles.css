@@ -1,0 +1,78 @@
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+/*body {
+  display: flex;              /* Use Flexbox                    */
+/* justify-content: center;    /* Center Horizontally            */
+/*}*/
+.wrapper{
+  max-height:500px;
+  width:100%;
+
+}
+.ball {
+  width: 300px;
+  height: 300px;
+  background-image: url("kerns.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  animation: expand 0.5s ;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+.balls{
+  animation: transl 10s linear;
+  animation-iteration-count: infinite;
+  
+}
+.ballz{
+  animation: transl 10s linear;
+  animation-iteration-count: infinite;
+  animation-delay:5s;
+}
+.ball2 {
+  width: 300px;
+  height: 300px;
+  background-image: url("kerns2.jpg");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  animation: expand 0.5s ;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+
+}
+.drunk{
+  width: 300px;
+  height: 300px;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  margin-left:50%;
+  margin-top:0%;
+  opacity: 0.5;
+  background-image: url("ian_gang.jpeg");
+}
+
+@keyframes transl {
+    0%   {margin-left:0%; }
+    50%  {margin-left:80%; }
+    100% {margin-left:0%; }
+}
+@keyframes expand{
+  0% {
+       transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+     }
+  50% {
+        transform: scale(2.0);
+        -webkit-transform: scale(2.0);
+        }
+  100% {
+        transform: scale(1.0);
+        -webkit-transform: scale(2.0);
+        }
+}
